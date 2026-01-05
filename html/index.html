@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
   <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
     <div class="flex min-h-screen">
   <!-- Sidebar -->
-  <aside class="w-64 bg-white border-r shadow-sm">
+  <aside class="fixed top-0 left-0 h-screen w-64 bg-white border-r shadow-sm">
     <div class="p-6 font-bold text-blue-600 text-xl">
       My Blog
     </div>
@@ -24,16 +24,31 @@
       <a href="#dm" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
         Data Management
       </a>
+      <a href="#it" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
+        It Architecture
+      </a>
       <a href="#sec" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
         Cybersecurity
+      </a>
+      <a href="#es" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
+        Enterprise Systems
+      </a>
+      <a href="#erp" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
+        ERP, SCM, and, CRM
+      </a>
+      <a href="#re" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
+        Retail dan E-Commerce
+      </a>
+      <a href="#pm" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
+        Project Management
       </a>
     </nav>
   </aside>
 
   <!-- Main Content -->
-  <main class="flex-1 p-8 bg-gray-100">
+  <main class="flex-1 ml-64 p-8 bg-gray-100">
 <!-- Enterprise Architecture` -->
-    <div class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="ea" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         1. Enterprise Architecture (EA)
       </h2>
@@ -67,7 +82,7 @@
       </ol>
     </div>
     <!-- Data Governence -->
-    <div class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="dg"class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">2. Data Governence</h2>
       <h3 class="text-xl font-semibold mb-2">Pengertian</h3>
       <p>
@@ -103,7 +118,7 @@
       </ul>
     </div>
     <!-- Data Management -->
-    <div class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="dm" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">3. Data Management</h2>
       <p class="text-xl font-semibold mb-2">Terdiri dari beberapa komponen:</p>
       <ul class="list-disc list-inside mb-4 space-y-1">
@@ -120,7 +135,7 @@
       </ul>
     </div>
     <!-- IT Architecture -->
-    <div class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id ="it" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">4. It Architecture</h2>
       <p class="text-xl font-semibold mb-2">
         Bab ini untuk memecahkan pertanyaan-pertanyaan sebagai berikut:
@@ -150,7 +165,7 @@
       </ul>
     </div>
     <!-- Cybersecurity -->
-    <div class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="sec" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">5. Cybersecurity</h2>
       <h3 class="text-xl font-semibold mb-2">Pengertian</h3>
       <p>
@@ -185,7 +200,7 @@
     </div>
 
     <!-- Enterprise Systems -->
-    <div class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="es" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         6. Enterprise Systems
       </h2>
@@ -231,7 +246,7 @@
     </div>
 
     <!-- ERP, SCM, CRM -->
-    <div class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="erp" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         7. ERP, SCM, dan CRM
       </h2>
@@ -251,15 +266,15 @@
         <li>Kurangnya pelatihan SDM</li>
       </ul>
 
-      <h3>SCM (Supply Chain Management)</h3>
+      <h3 class="text-xl font-semibold mb-2">SCM (Supply Chain Management)</h3>
       <p>
         Mengelola alur dari pemasok, produksi, distribusi, hingga pelanggan.
       </p>
 
-      <h3>CRM (Customer Relationship Management)</h3>
+      <h3 class="text-xl font-semibold mb-2">CRM (Customer Relationship Management)</h3>
       <p>Sistem untuk mengelola hubungan dan komunikasi dengan pelanggan.</p>
 
-      <h4>Jenis CRM</h4>
+      <h4 class="text-xl font-semibold mb-2">Jenis CRM</h4>
       <ol>
         <li>Operational CRM</li>
         <li>Analytical CRM</li>
@@ -268,12 +283,12 @@
     </div>
 
     <!-- Retail dan E-Commerce -->
-    <div class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="re" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         8. Retail dan E-Commerce
       </h2 class="text-xl font-semibold mb-2">
 
-      <h3>Retail</h3>
+      <h3 class="text-xl font-semibold mb-2">Retail</h3>
       <p>Penjualan barang atau jasa langsung ke konsumen secara eceran.</p>
 
       <h4>Tantangan Retail</h4>
@@ -299,7 +314,7 @@
     </div>
 
     <!-- Project Management & SDLC -->
-    <div class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="pm" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         9. Project Management & SDLC
       </h2>

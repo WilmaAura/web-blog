@@ -5,3 +5,19 @@
   font-family: poppins, sans-serif;
   text-decoration: none;
 }
+body {
+  overflow-x: hidden;
+}
+.hero-header {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: #222;
+}
+
+.wrapper {
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
+}

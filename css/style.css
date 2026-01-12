@@ -18,6 +18,58 @@ body {
 .wrapper {
   width: 1280px;
   max-width: 95%;
-  margin: 0 auto;
+  margin: 0 auto; /* The wrapper box is located right in the middle of the screen horizontally. */
   padding: 0 20px;
+}
+
+header {
+  /* 40px(top), 0px (right & left), 30px(bottom) */
+  padding: 40px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo i {
+  height: 45px;
+  width: 45px;
+  background-color: #007ced;
+  border-radius: 50%;
+  color: fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 10.5px;
+  margin-right: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.logo .logo-text {
+  font-size: 24px;
+  font-weight: 500px;
+  color: #fff;
+}
+
+.nav .togglebtn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 45px;
+  right: 3%;
+  z-index: 5;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .togglebtn span {
+  display: block;
+  background-color: #007ced;
+  margin: 5px 0px;
 }

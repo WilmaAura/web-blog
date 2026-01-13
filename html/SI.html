@@ -6,60 +6,70 @@
     <title>index</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100 text-gray-800 font-script leading-relaxed">
+  <body class="bg-[#222] text-gray-200 leading-relaxed">
     <div class="flex min-h-screen">
-  <!-- Sidebar -->
-  <aside class="fixed top-0 left-0 h-screen w-64 bg-white border-r shadow-sm">
-    <div class="p-6 font-bold text-blue-600 text-xl">
-      My Blog
-    </div>
+      <!-- SIDEBAR -->
+      <aside
+        class="fixed top-0 left-0 h-screen w-64 bg-[#1b1b1b] border-r border-gray-700"
+      >
+          <div class="p-6 space-y-4">
+      <div class="text-xl font-bold text-blue-500">
+        Wilma Docs
+      </div>
 
-    <nav class="px-4 space-y-2">
-      <a href="#ea" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
-        Enterprise Architecture
+      <a
+        href="index.html"
+        class="inline-flex items-center gap-2 text-sm text-gray-300 hover:text-blue-400 transition"
+      >
+        ← Back to Home
       </a>
-      <a href="#dg" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
-        Data Governance
-      </a>
-      <a href="#dm" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
-        Data Management
-      </a>
-      <a href="#it" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
-        It Architecture
-      </a>
-      <a href="#sec" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
-        Cybersecurity
-      </a>
-      <a href="#es" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
-        Enterprise Systems
-      </a>
-      <a href="#erp" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
-        ERP, SCM, and, CRM
-      </a>
-      <a href="#re" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
-        Retail dan E-Commerce
-      </a>
-      <a href="#pm" class="block px-4 py-2 rounded hover:bg-blue-50 text-gray-700">
-        Project Management
-      </a>
-    </nav>
-  </aside>
+    </div>
+        <nav class="px-4 space-y-2 text-sm">
+          <a href="#ea" class="block px-4 py-2 rounded hover:bg-[#2a2a2a]"
+            >Enterprise Architecture</a
+          >
+          <a href="#dg" class="block px-4 py-2 rounded hover:bg-[#2a2a2a]"
+            >Data Governance</a
+          >
+          <a href="#dm" class="block px-4 py-2 rounded hover:bg-[#2a2a2a]"
+            >Data Management</a
+          >
+          <a href="#it" class="block px-4 py-2 rounded hover:bg-[#2a2a2a]"
+            >IT Architecture</a
+          >
+          <a href="#sec" class="block px-4 py-2 rounded hover:bg-[#2a2a2a]"
+            >Cybersecurity</a
+          >
+          <a href="#es" class="block px-4 py-2 rounded hover:bg-[#2a2a2a]"
+            >Enterprise Systems</a
+          >
+          <a href="#erp" class="block px-4 py-2 rounded hover:bg-[#2a2a2a]"
+            >ERP, SCM, CRM</a
+          >
+          <a href="#re" class="block px-4 py-2 rounded hover:bg-[#2a2a2a]"
+            >Retail & E-Commerce</a
+          >
+          <a href="#pm" class="block px-4 py-2 rounded hover:bg-[#2a2a2a]"
+            >Project Management</a
+          >
+        </nav>
+      </aside>
 
   <!-- Main Content -->
-  <main class="flex-1 ml-64 p-8 bg-gray-100">
+  <main class="flex-1 ml-64 p-10">
 <!-- Enterprise Architecture` -->
- <div id="ea" class="scroll-mt-24 max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+ <div id="ea" class="scroll-mt-24 max-w-4xl mx-auto bg-[#1b1b1b] p-8 mb-10 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         1. Enterprise Architecture (EA)
       </h2>
       <h3 class="text-xl font-semibold mb-2">Pengertian</h3>
-      <p class="mb-4 leading-relaxed">
+      <p class="text-gray-300 mb-4">
         Enterprise Architecture (EA) adalah kerangka/blueprint yang
         menggambarkan bagaimana bisnis, data, aplikasi, dan teknologi saling
         terhubung untuk mendukung strategi organisasi jangka panjang. EA bukan
         flowchart, tetapi dapat menggunakan flowchart sebagai bagian kecilnya.
       </p>
-      <h4 class="font-semibold mt-4 mb-2">Mengapa EA Dibutuhkan</h4>
+      <h4 class="font-semibold mb-2">Mengapa EA Dibutuhkan</h4>
       <ul class="list-disc list-inside mb-4 space-y-1">
         <li>Kompleksitas sistem IT semakin tinggi dan sulit dikelola</li>
         <li>Sistem IT tidak lagi selaras dengan kebutuhan bisnis</li>
@@ -82,7 +92,7 @@
       </ol>
     </div>
     <!-- Data Governence -->
-    <div id="dg"class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="dg"class="max-w-4xl mx-auto bg-[#1b1b1b] p-8 mb-10 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">2. Data Governence</h2>
       <h3 class="text-xl font-semibold mb-2">Pengertian</h3>
       <p>
@@ -118,7 +128,7 @@
       </ul>
     </div>
     <!-- Data Management -->
-    <div id="dm" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="dm" class="max-w-4xl mx-auto bg-[#1b1b1b] p-8 mb-10 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">3. Data Management</h2>
       <p class="text-xl font-semibold mb-2">Terdiri dari beberapa komponen:</p>
       <ul class="list-disc list-inside mb-4 space-y-1">
@@ -135,7 +145,7 @@
       </ul>
     </div>
     <!-- IT Architecture -->
-    <div id ="it" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id ="it" class="max-w-4xl mx-auto bg-[#1b1b1b] p-8 mb-10 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">4. It Architecture</h2>
       <p class="text-xl font-semibold mb-2">
         Bab ini untuk memecahkan pertanyaan-pertanyaan sebagai berikut:
@@ -165,7 +175,7 @@
       </ul>
     </div>
     <!-- Cybersecurity -->
-    <div id="sec" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="sec" class="max-w-4xl mx-auto bg-[#1b1b1b] p-8 mb-10 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">5. Cybersecurity</h2>
       <h3 class="text-xl font-semibold mb-2">Pengertian</h3>
       <p>
@@ -200,7 +210,7 @@
     </div>
 
     <!-- Enterprise Systems -->
-    <div id="es" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="es" class="max-w-4xl mx-auto bg-[#1b1b1b] p-8 mb-10 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         6. Enterprise Systems
       </h2>
@@ -246,7 +256,7 @@
     </div>
 
     <!-- ERP, SCM, CRM -->
-    <div id="erp" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="erp" class="max-w-4xl mx-auto bg-[#1b1b1b] p-8 mb-10 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         7. ERP, SCM, dan CRM
       </h2>
@@ -283,7 +293,7 @@
     </div>
 
     <!-- Retail dan E-Commerce -->
-    <div id="re" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="re" class="max-w-4xl mx-auto bg-[#1b1b1b] p-8 mb-10 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         8. Retail dan E-Commerce
       </h2 class="text-xl font-semibold mb-2">
@@ -314,7 +324,7 @@
     </div>
 
     <!-- Project Management & SDLC -->
-    <div id="pm" class="max-w-4xl mx-auto bg-white p-6 mb-8 rounded-lg shadow">
+    <div id="pm" class="max-w-4xl mx-auto bg-[#1b1b1b] p-8 mb-10 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-4 text-blue-500">
         9. Project Management & SDLC
       </h2>

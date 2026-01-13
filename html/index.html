@@ -44,7 +44,7 @@
           </div>
 
           <div class="hero-text">
-            <h5>HI I'm <span class="">A developer</span></h5>
+            <h5>HI I'm <span class="input">A developer</span></h5>
             <h1>Wilma Aura</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
@@ -53,7 +53,7 @@
               officiis quos mollitia repellat tempora. Atque, officia?
             </p>
             <div class="btn-group">
-              <a href="#" class="btn 2active">p</a>
+              <a href="#" class="btn active">p</a>
               <a href="#" class="btn">Contact</a>
             </div>
             <div class="social">
@@ -65,6 +65,21 @@
         </div>
       </div>
     </div>
-    <div></div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+      var typed = new Typed(".input", {
+        strings: ["Frontend Developer", "Backend Developer", "A Developer"],
+        typedSpeed: 55,
+        backSpeed: 55,
+      });
+    </script>
   </body>
 </html>

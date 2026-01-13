@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #111;
+  color: #e5e5e5;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.cv {
+  max-width: 900px;
+  margin: auto;
+  background: #1b1b1b;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #007ced;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #007ced;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.title {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.contact p {
+  font-size: 0.95rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "▹";
+  color: #007ced;
+  margin-right: 8px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill-box {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project span {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  .cv {
+    background: white;
+    color: black;
+  }
+}
